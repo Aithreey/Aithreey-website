@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Pembayaran - Aithreey Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Aithreey Store</h1>
+        <h5>-sholawat in every crochet-</h5>
+        <nav>
+            <ul>
+                <li><a href="index.html">Beranda</a></li>
+                <li><a href="about.html">Tentang Kami</a></li>
+                <li><a href="contact.html">Kontak</a></li>
+                <li><a href="payment.html">Pembayaran</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Konten Utama -->
+    <main>
+        <h2>Detail Pembayaran</h2>
+        <form id="paymentForm">
+            <label for="product">Produk:</label>
+
+            <input type="text" id="product" name="product"readonly>
+            <label for="price">Harga:</label>
+            <input type="text" id="price" name="price"readonly>
+            <label for="name">Nama Lengkap:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="address">Alamat Pengiriman:</label>
+            <textarea id="address" name="address"required></textarea>
+            <label for="paymentMethod">Metode Pembayaran:</label>
+            <select id="paymentMethod" name="paymentMethod" required>
+                <option value="">Pilih Metode</option>
+                <option value="Transfer Bank">Transfer Bank</option>
+                <option value="Kartu Kredit">Kartu Kredit</option>
+                <option value="COD">Cash on Delivery (COD)</option>
+            </select>
+
+            <button type="submit">Bayar Sekarang</button>
+        </form>
+    </main>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aithreey Store</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
